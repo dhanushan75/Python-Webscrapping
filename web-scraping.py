@@ -28,9 +28,3 @@ print(scraper.get(url2).text)
 #print('lines in results : ', url2)
 #if('href' in str(url2)):
     #print(url2)
-
-
-#if(results == none):
-#    print('found it')
-#else:
-#    print('not found it')
