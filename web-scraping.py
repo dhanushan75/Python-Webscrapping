@@ -23,7 +23,6 @@ print(scraper.get(url2).text)
 
 #print(results2)
 
-
 #url2 = results.get_text()
 #print('lines in results : ', url2)
 #if('href' in str(url2)):
