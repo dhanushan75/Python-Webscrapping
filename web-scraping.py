@@ -13,15 +13,12 @@ print(results)
 url2 = results[0].find('a')['href']
 print(url2)
 
-scraper = cloudscraper.create_scraper()
-print(scraper.get(url2).text)
+page2 = requests.get(url2)
+soup2 = BeautifulSoup(page2.content, 'html.parser')
+print('soup2 : ', soup2)
+results2 = soup2.find_all('div', class_="download")
 
-#page2 = requests.get(url2)
-#soup2 = BeautifulSoup(page2.content, 'html.parser')
-#print('soup2 : ', soup2)
-#results2 = soup2.find_all('div', class_="download")
-
-#print(results2)
+print(results2)
 
 #url2 = results.get_text()
 #print('lines in results : ', url2)
